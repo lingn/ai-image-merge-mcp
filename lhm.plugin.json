@@ -1,0 +1,54 @@
+{
+  "identifier": "lingn-ai-image-merge",
+  "name": "AI Image Merge",
+  "version": "0.1.0",
+  "description": "Combine exactly two images into one AI-generated composition from an MCP client.",
+  "author": "AI Image Merge",
+  "authorUrl": "https://aiimagemerge.com",
+  "category": "tools",
+  "homepage": "https://aiimagemerge.com",
+  "icon": "🖼️",
+  "tags": ["image", "image merge", "ai", "creative tools"],
+  "tools": [
+    {
+      "name": "merge_images",
+      "description": "Combine exactly two public HTTPS JPG, PNG, or WebP image URLs into one AI-generated image.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "imageUrls": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": { "type": "string", "format": "uri" }
+          },
+          "prompt": { "type": "string", "minLength": 1, "maxLength": 2000 },
+          "preset": {
+            "type": "string",
+            "enum": ["natural", "people", "product", "creative"],
+            "default": "natural"
+          },
+          "aspectRatio": {
+            "type": "string",
+            "enum": ["auto", "1:1", "4:5", "16:9"],
+            "default": "auto"
+          }
+        },
+        "required": ["imageUrls", "prompt"]
+      }
+    },
+    {
+      "name": "get_merge_status",
+      "description": "Check an image merge task and return its generated image URL when ready.",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "taskId": { "type": "string", "minLength": 1, "maxLength": 100 }
+        },
+        "required": ["taskId"]
+      }
+    }
+  ]
+}

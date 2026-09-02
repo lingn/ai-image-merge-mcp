@@ -1,0 +1,29 @@
+{
+  "name": "ai-image-merge-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for combining two images with AI using AI Image Merge.",
+  "type": "module",
+  "bin": {
+    "ai-image-merge-mcp": "src/index.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "lhm.plugin.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "image",
+    "ai",
+    "image-merge",
+    "lobehub"
+  ],
+  "license": "MIT"
+}
