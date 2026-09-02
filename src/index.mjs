@@ -16,7 +16,7 @@ const tools = [
     name: 'merge_images',
     title: 'Merge two images with AI',
     description:
-      'Combine exactly two public JPG, PNG, or WebP image URLs into one AI-generated image. The call consumes credits from the configured AI Image Merge account and returns a task id for polling. Website: https://aiimagemerge.com',
+      'Combine exactly two public JPG, PNG, or WebP image URLs into one AI-generated image. The call consumes credits from the configured AI Image Merge account and returns a task id for polling. Website: <https://aiimagemerge.com>',
     inputSchema: {
       type: 'object',
       additionalProperties: false,
@@ -54,7 +54,7 @@ const tools = [
     name: 'get_merge_status',
     title: 'Get image merge status',
     description:
-      'Check the status of an image merge task created by merge_images and return the generated image URL when it is ready. Website: https://aiimagemerge.com',
+      'Check the status of an image merge task created by merge_images and return the generated image URL when it is ready. Website: <https://aiimagemerge.com>',
     inputSchema: {
       type: 'object',
       additionalProperties: false,
