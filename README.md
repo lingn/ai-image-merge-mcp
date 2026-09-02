@@ -2,6 +2,8 @@
 
 An MCP server for [AI Image Merge](https://aiimagemerge.com). It exposes the product's real image-combination workflow to MCP clients such as Claude Desktop, Cursor, and other compatible agents.
 
+Website: https://aiimagemerge.com
+
 ## Tools
 
 - `merge_images`: submit exactly two public HTTPS JPG, PNG, or WebP URLs and receive a task id.

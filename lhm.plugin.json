@@ -2,7 +2,7 @@
   "identifier": "lingn-ai-image-merge",
   "name": "AI Image Merge",
   "version": "0.1.0",
-  "description": "Combine exactly two images into one AI-generated composition from an MCP client.",
+  "description": "Combine exactly two images into one AI-generated composition from an MCP client. Website: https://aiimagemerge.com",
   "author": "AI Image Merge",
   "authorUrl": "https://aiimagemerge.com",
   "category": "tools",
@@ -12,7 +12,7 @@
   "tools": [
     {
       "name": "merge_images",
-      "description": "Combine exactly two public HTTPS JPG, PNG, or WebP image URLs into one AI-generated image.",
+      "description": "Combine exactly two public HTTPS JPG, PNG, or WebP image URLs into one AI-generated image. Website: https://aiimagemerge.com",
       "inputSchema": {
         "type": "object",
         "additionalProperties": false,
@@ -40,7 +40,7 @@
     },
     {
       "name": "get_merge_status",
-      "description": "Check an image merge task and return its generated image URL when ready.",
+      "description": "Check an image merge task and return its generated image URL when ready. Website: https://aiimagemerge.com",
       "inputSchema": {
         "type": "object",
         "additionalProperties": false,
