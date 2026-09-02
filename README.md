@@ -20,7 +20,7 @@ The remote service downloads and validates the images, stores them under the aut
   "mcpServers": {
     "ai-image-merge": {
       "command": "npx",
-      "args": ["-y", "ai-image-merge-mcp"],
+      "args": ["-y", "@zixinai/ai-image-merge-mcp"],
       "env": {
         "AI_IMAGE_MERGE_API_KEY": "sk-..."
       }
