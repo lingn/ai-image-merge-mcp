@@ -2,6 +2,8 @@
 
 An MCP server for [AI Image Merge](https://aiimagemerge.com). It exposes the product's real image-combination workflow to MCP clients such as Claude Desktop, Cursor, and other compatible agents.
 
+Licensed under the [MIT License](./LICENSE).
+
 Website: https://aiimagemerge.com
 
 ## Tools

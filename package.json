@@ -9,7 +9,8 @@
   "files": [
     "src",
     "README.md",
-    "lhm.plugin.json"
+    "lhm.plugin.json",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=18"
